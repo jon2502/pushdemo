@@ -9,24 +9,21 @@ var resultater = document.getElementById('resultater')
 plus.addEventListener('click',plsuclick)
 function plsuclick() {
     var sum = Number(tal1.value)+Number(tal2.value);
-    var add = document.createElement('li').innerHTML=sum
-    resultater.append(add)
+    resultater.innerHTML= sum
 }
 minus.addEventListener('click',minusclick)
 function minusclick() {
     var sum = Number(tal1.value)-Number(tal2.value);
-    var add = document.createElement('li').innerHTML=sum
-    resultater.append(add)
+    resultater.innerHTML= sum
 }
 gange.addEventListener('click',gangeclick)
 function gangeclick() {
     var sum = Number(tal1.value)*Number(tal2.value);
-    var add = document.createElement('li').innerHTML=sum
-    resultater.append(add)
+
+    resultater.innerHTML= sum
 }
 dividere.addEventListener('click',dividereclick)
 function dividereclick() {
     var sum = Number(tal1.value)/Number(tal2.value);
-    var add = document.createElement('li').innerHTML=sum
-    resultater.append(add)
+    resultater.innerHTML= sum
 }
